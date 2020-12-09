@@ -8,7 +8,6 @@
 def canUnlockAll(boxes):
     to_open = [i for i in range(len(boxes))]
     opened = {"0": "ok"}
-    can = 0
     for box in range(len(boxes)):
         for key in boxes[box]:
             if key in to_open and key != box:
