@@ -1,11 +1,10 @@
 #!/usr/bin/python3
-"""
+def canUnlockAll(boxes):
+    """
     Validates if all boxes can be openned
     @boxes: list of lists
     Returns: True or False
-"""
-
-def canUnlockAll(boxes):
+    """
     to_open = [i for i in range(len(boxes))]
     opened = {"0": "ok"}
     for box in range(len(boxes)):
